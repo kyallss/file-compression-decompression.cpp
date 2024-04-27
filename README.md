@@ -1,14 +1,18 @@
 # README
 Run-Length Encoding Program
-Description 
+
+Description: 
 This program performs Run-Length Encoding (RLE) on input text files. 
 It can both encode plaintext files and decode RLE-encoded files.
 
 Features 
 Encoding: Converts input text into its RLE-encoded form.
+
 Decoding: Converts RLE-encoded text back into its original form.
+
 Input/Output Files:
 Reads input from input.txt and writes output to output.txt.
+
 User Interaction: 
 Allows the user to choose between encoding and decoding.
 
