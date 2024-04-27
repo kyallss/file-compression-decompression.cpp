@@ -5,11 +5,11 @@
 This C++ program implements the Run-Length Encoding (RLE) algorithm, a simple form of data compression. It takes input from a text file, performs either encoding or decoding based on user choice, and writes the result to an output file. Run-Length Encoding is a lossless compression technique commonly used in scenarios where consecutive characters are repeated frequently.
 
 #### Featires:
- **Encoding**: Converts input text into its RLE-encoded form.
- **Decoding**: Converts RLE-encoded text back into its original form.
- **Input/Output Files**: Reads input from input.txt and writes output to output.txt.
- **User Interaction**: Provides a user-friendly interface for selecting the encoding or decoding operation.
- **Error Handling**: Handles file I/O errors gracefully, providing informative error messages.
+ ## Encoding: Converts input text into its RLE-encoded form.
+ ## Decoding: Converts RLE-encoded text back into its original form.
+ ## Input/Output Files: Reads input from input.txt and writes output to output.txt.
+ ## User Interaction: Provides a user-friendly interface for selecting the encoding or decoding operation.
+ ## Error Handling: Handles file I/O errors gracefully, providing informative error messages.
 
 
 #### Compilation: 
