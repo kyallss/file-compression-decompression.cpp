@@ -1,30 +1,35 @@
 README
-Run-Length Encoding Program
-Description
-This C++ program implements the Run-Length Encoding (RLE) algorithm, a simple form of data compression. It takes input from a text file, performs either encoding or decoding based on user choice, and writes the result to an output file. Run-Length Encoding is a lossless compression technique commonly used in scenarios where consecutive characters are repeated frequently.
+Run-Length Encoding (RLE) Compression and Decompression
 
-Features
-Encoding: Converts input text into its RLE-encoded form.
-Decoding: Converts RLE-encoded text back into its original form.
-Input/Output Files: Reads input from input.txt and writes output to output.txt.
-User Interaction: Provides a user-friendly interface for selecting the encoding or decoding operation.
-Error Handling: Handles file I/O errors gracefully, providing informative error messages.
+#### Overview:
+This project implements Run-Length Encoding (RLE) compression and decompression algorithms in C++. RLE is a simple form of lossless data compression where consecutive identical elements (characters in this case) are replaced with a single data value and count. 
 
-Compilation: Compile the source code using your C++ compiler. 
-Run the Program: Execute the compiled binary:
+#### Files:
+1. **main.cpp**: Contains the implementation of RLE compression and decompression algorithms.
+2. **input.txt**: Input file containing the data to be compressed or decompressed.
+3. **output.txt**: Output file where compressed or decompressed data will be stored.
+4. **README.md**: Documentation file explaining the project.
 
-Input: Write the text you want to encode or the RLE-encoded text you want to decode in input.txt. Each line in the file represents a separate input string.
-Operation Selection: When you run the program, you will be prompted to choose between encoding and decoding. Enter 1 for encoding or 2 for decoding.
-Output: The result of the chosen operation will be written to output.txt.
-Example
-Suppose input.txt contains the following text:
-“hello my name is Kyial”
-Encoding: If you choose to encode, the resulting output.txt will contain:
-“h1e1l2o1 1m1y1 1n1a1m1e1 1i1s1 1K1y1i1a1l1”
-Decoding: If you choose to decode the above encoded text, the resulting output.txt will contain:
-“hello my name is Kyial”
+#### Compression Algorithm:
+The compression algorithm `RunLengthEnc()` takes a string `str` as input and compresses it using RLE. It iterates through the input string, counts consecutive identical characters, and writes the character followed by its count to the output file. For example, if the input string is "AAABBCCCC", the compressed output will be "A3B2C4".
 
+#### Decompression Algorithm:
+The decompression algorithm `RunLengthDecr()` takes a string `str` as input and decompresses it using RLE. It iterates through the input string, reads the character and its count, and repeats the character according to its count in the output. For example, if the input string is "A3B2C4", the decompressed output will be "AAABBCCCC".
 
+#### Major Functions:
+1. **RunLengthEnc()**: Compresses the input string using RLE and writes the compressed data to the output file.
+2. **RunLengthDecr()**: Decompresses the input string using RLE and writes the decompressed data to the output file.
+3. **main()**: Handles file input/output operations, user input for selecting compression or decompression, and calls the appropriate functions accordingly.
 
+#### Example Usage:
+1. To compress data:
+   - Place the data to be compressed in `input.txt`.
+   - Compile and run the program.
+   - Select compression option when prompted(type 1).
+   - The compressed data will be stored in `output.txt`.
 
-
+2. To decompress data:
+   - Place the compressed data in `input.txt`.
+   - Compile and run the program.
+   - Select decompression option when prompted(type 2).
+   - The decompressed data will be stored in `output.txt`.
