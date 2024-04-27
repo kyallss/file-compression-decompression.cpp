@@ -35,7 +35,9 @@ The result will be written to output.txt.
 Example
 
 Suppose input.txt contains the following text:
+
 "hello my name is Kyial"
+
 If you choose to encode, 
 the resulting output.txt will contain:
 
